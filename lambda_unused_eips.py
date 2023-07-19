@@ -2,7 +2,7 @@ import boto3
 import json
 
 def lambda_handler(event, context):
-    region_list=['us-east-1','ap-south-1','us-west-1','us-east-2']
+    region_list=['us-east-1','us-west-2','us-west-1','us-east-2']
     for region in region_list:
         ec2 = boto3.client('ec2',region_name=region)
         addresses = ec2.describe_addresses()
