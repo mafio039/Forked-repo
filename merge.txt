@@ -1,0 +1,5 @@
+line1
+HEAD
+append some line to merge.txt
+replacing the content of this file to merge later
+merge_branch
